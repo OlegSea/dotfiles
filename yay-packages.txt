@@ -1,0 +1,4 @@
+polybar
+spotify
+discord
+vivaldi

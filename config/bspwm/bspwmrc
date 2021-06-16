@@ -1,0 +1,34 @@
+#! /bin/sh
+
+# Default stuff
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+killall picom
+bspc monitor -d 1 2 3 4 5 6 7 8 9
+
+xinput --set-prop 'SINOWEALTH Wired Gaming Mouse' 'libinput Accel Speed' -0.75
+setxkbmap -option grp:win_space_toggle us,ru
+wmname LG3D
+
+# Visual
+
+bspc config border_width        2
+bspc config window_gap          8
+bspc config top_padding 28
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config single_monocle	 true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+bspc config focused_border_color 	"#c252ff"
+
+# Rules
+
+
+# Autostart
+
+picom -b --experimental-backends &
+hsetroot -cover ~/Pictures/wallpaper.jpg &
+/home/olegsea/scripts/bspwm/launchpolybar &
+
