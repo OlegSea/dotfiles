@@ -1,7 +1,7 @@
 #!/bin/sh
 path=$(pwd)
 
-sudo pacman -S --needed xorg git base-devel wget bspwm sxhkd zsh pulseaudio pulseaudio-alsa pavucontrol python python-dbus python-pip rofi kitty scrot xclip
+sudo pacman -S --needed xorg git base-devel wget bspwm sxhkd zsh pulseaudio pulseaudio-alsa pavucontrol python python-dbus python-pip rofi kitty scrot xclip ntfs-3g picom hsetroot
 
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
