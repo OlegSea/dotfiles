@@ -2,3 +2,4 @@ polybar
 spotify
 discord
 vivaldi
+escrotum-git
