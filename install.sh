@@ -3,7 +3,9 @@ path=$(pwd)
 
 sudo cp pacman.conf /etc/
 
-sudo pacman -Sy --needed xorg git base-devel wget bspwm sxhkd zsh dunst pulseaudio pulseaudio-alsa pavucontrol python python-dbus python-pip rofi kitty xclip ntfs-3g picom hsetroot ttf-font-awesome awesome-terminal-fonts noto-fonts-cjk mpv thunar nomacs 
+sudo pacman -Sy --needed xorg git base-devel wget bspwm sxhkd zsh dunst pulseaudio pulseaudio-alsa pavucontrol python python-dbus python-pip rofi kitty xclip ntfs-3g picom hsetroot ttf-font-awesome awesome-terminal-fonts noto-fonts-cjk mpv thunar nomacs lightdm lightdm-gtk-greeter
+
+sudo systemctl enable lightdm
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
