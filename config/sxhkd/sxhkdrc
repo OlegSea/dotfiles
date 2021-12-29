@@ -8,7 +8,10 @@ super + Return
 
 # program launcher
 super + d
-	rofi -lines 18 -padding 18 -width 20 -location 0 -show drun -sidebar-mode -columns 1
+	$HOME/.config/rofi/launchers/text/launcher.sh
+
+super + c
+	$HOME/.config/rofi/launchers/text/launcher_calc.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -61,10 +64,6 @@ super + {_,shift + }{Left,Down,Up,Right}
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
-
-# focus the next/previous window in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
